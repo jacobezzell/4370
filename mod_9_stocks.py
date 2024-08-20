@@ -42,7 +42,13 @@ print(summary)
 #create a dataframe with the closing price for each stock
 df_pivot = df_all.pivot(index='Date', columns='Ticker', values='Close')
 
-print(df_pivot)
+#print(df_pivot)
+
+#Find the total value of the portfolio each day by adding the values across. But drop out the SPY since
+df_pivot_nospy = df_pivot.drop("SPY")
+df_pivot_nospy["Total"] = df_pivot_nospy.sum(axis=1)
+
+
 #make the correlation calculation, note this makes a series, not a dataframe.
 correlation_with_SPY = df_pivot.corrwith(df_pivot['SPY'])
 
@@ -53,7 +59,7 @@ print(df_corr)
 
 #print the various stocks with a line drawing
 # Plot all columns. dataframes to matplot is just too easy.
-df_pivot.plot(figsize=(12, 6))
+df_pivot.plot(kind="line", figsize=(12, 6))
 
 # Add labels and title
 plt.xlabel('Date')
