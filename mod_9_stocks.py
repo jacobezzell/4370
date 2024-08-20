@@ -6,9 +6,15 @@ Description: display using pandas
 """
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
-#create a list of all the files to import
-files = ["AIG", "F", "FB", "GOOG", "IBM", "M", "MSFT", "RDS-A", "SPY"]
+#define the path from this file to the stored data
+file_path="c:/DU Python/4370/stockdata/"
+
+#use list comprehension and a filter to only pull the .csv files from the directory
+#drop the last 4 characters of each list to get just the filename without the extension
+files = [f[:-4] for f in os.listdir(file_path) if f.endswith('.csv')]
+
 
 #create an empty dictionary to hold all the dataframes from the CSV file
 df_list={}
@@ -16,7 +22,7 @@ df_list={}
 for file in files:
     #read the data from the appropriate csv
     try:
-        df_list[file]=pd.read_csv('stockdata/'+file+'.csv')
+        df_list[file]=pd.read_csv(f"{file_path}{file}.csv")
         #insert a column to hold the ticker indicator for this file
         df_list[file].insert(0,'Ticker',file)
         #display a sampling
