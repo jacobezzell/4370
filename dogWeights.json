@@ -1,0 +1,164 @@
+[
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2007",
+   "Weight": 15.6,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2008",
+   "Weight": 24.1,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2009",
+   "Weight": 24.5,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2010",
+   "Weight": 25.2,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2011",
+   "Weight": 25.5,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2011",
+   "Weight": 4.5,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2012",
+   "Weight": 25.9,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2012",
+   "Weight": 12.3,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2013",
+   "Weight": 26.9,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2013",
+   "Weight": 12.4,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2014",
+   "Weight": 27.5,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2014",
+   "Weight": 12.3,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2015",
+   "Weight": 30,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2015",
+   "Weight": 13,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 2,
+   "Dog": "Twinky",
+   "Date": "Jan-1-2015",
+   "Weight": 14.2,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 2
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 3,
+   "Dog": "Gray",
+   "Date": "Jan-1-2016",
+   "Weight": 32.4,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 10
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 1,
+   "Dog": "Rex",
+   "Date": "Jan-1-2016",
+   "Weight": 13.2,
+   "DogBreed": "Border Collie",
+   "DogAge": 5
+ },
+ {
+   "OwnerID": 1,
+   "DogID": 2,
+   "Dog": "Twinky",
+   "Date": "Jan-1-2016",
+   "Weight": 20.5,
+   "DogBreed": "Golden Retriever",
+   "DogAge": 2
+ }
+]
