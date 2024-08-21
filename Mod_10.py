@@ -31,7 +31,7 @@ class Investor:
         for stock in self.stockdata:
             #return the stockdata into a pandas dataframe.
             df = pd.DataFrame(columns=["ticker", "date", "close"])
-            print(df)
+            #print(df)
 
             for stock in self.stockdata:
                 new_row = {"ticker":stock.ticker, "date":stock.date, "close":float(stock.close)}
@@ -82,7 +82,7 @@ if __name__ ==  "__main__":
     #use list comprehension and a filter to only pull the .csv files from the directory
     #drop the last 4 characters of each list to get just the filename without the extension
     files = [f[:-4] for f in os.listdir(file_path) if f.endswith('.csv')]
-    print(files)
+    #print(files)
 
     #make an investor that will hold all the stock data from the csv files
     my_investor = Investor(1, "Bob", "123 Technology Way")
