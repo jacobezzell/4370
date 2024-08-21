@@ -58,7 +58,7 @@ if __name__ ==  "__main__":
 
     #create the database file and tables if they don't already exist
     db_location = "./"
-    db_file = "mod_7.db"
+    db_file = "mod_10.db"
 
     try:
         conn = sqlite3.connect(db_location+db_file)
