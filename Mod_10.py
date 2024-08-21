@@ -2,14 +2,14 @@
 Jacob Ezzell
 August 20th 2024
 ICS 4370
-Description: display stock data from a json file
+Description: final project, reworking a lot of previous concepts.
+reworked the investor class and stock class
+encorporated returning a pandas dataframe object with a class method
+
 """
-from datetime import date, datetime
-from prettytable import PrettyTable
+
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 import sqlite3
-import json
 import pandas as pd
 import os
 
@@ -34,10 +34,9 @@ class Investor:
             print(df)
 
             for stock in self.stockdata:
-                new_row = {"ticker":stock.ticker, "date":stock.date, "close":stock.close}
+                new_row = {"ticker":stock.ticker, "date":stock.date, "close":float(stock.close)}
                 #print(new_row)
                 df.loc[len(df)] = new_row
-
             return df
            
 #define the stock class:
@@ -134,12 +133,20 @@ if __name__ ==  "__main__":
         #print(sql_query)
         cursor.execute(sql_query)
 
-    #load all the data into the database
- 
-    #do some manipulation
+    #create a dataframe with the closing price for each stock
+    df_pivot = df.pivot(index='date', columns='ticker', values='close')
 
-    #make a graph
+    #print the various stocks with a line drawing
+    # Plot all columns. dataframes to matplot is just too easy.
+    df_pivot.plot(kind="line", figsize=(12, 6))
 
+    # Add labels and title
+    plt.xlabel('Date')
+    plt.ylabel('Price')
+    plt.title('Stock Prices Over Time')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
     #done with the database now
     conn.commit()
